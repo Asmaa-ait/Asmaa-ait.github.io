@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colors Song - Music World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Comic Neue', cursive;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      animation: bgMove 20s linear infinite;
+      background-size: 400% 400%;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, #ff6ec4 0%, #7873f5 100%);
+      padding: 10px 30px;
+      color: white;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    header img {
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 12px;
+      background: linear-gradient(to right, #f7971e, #ffd200);
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .media-container {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .lyrics {
+      flex: 1;
+      background: #fff0f5;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+      font-size: 20px;
+      color: #444;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .video-container {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #ffd200;
+      color: #333;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .back-button:hover {
+      background: #f7971e;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 800px) {
+      .media-container {
+        flex-direction: column;
+      }
+
+      .lyrics, .video-container {
+        flex: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <a href="index.html">
+    <img src="images/logo.jpg" alt="Logo">
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="songs.html">Songs</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+  <div class="content">
+  <div class="media-container">
+    <div class="video-container">
+      <video controls>
+        <source src="media/colors.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="lyrics">
+      <h2>🎨 Colors Song Lyrics 🎵</h2>
+      <p>Hello! Do you know your colors?<br>
+      Do you want to sing them with me?<br>
+      Let's go!<br>
+      Red, red.<br>
+      Blue, blue.<br>
+      Yellow, yellow.<br>
+      Green, green.<br>
+      Orange, orange.<br>
+      Pink, pink.<br>
+      Purple, purple.<br>
+      Brown, brown.<br>
+      Black, black.<br>
+      White, white.<br>
+      Gray, gray.</p>
+    </div>
+  </div>
+
+  <a href="songs.html" class="back-button">← Go Back to List</a>
+</div>
+
+      <div class="video-container">
+        <video controls>
+          <source src="media/colors.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <a href="songs.html" class="back-button">← Go Back to List</a>
+  </div>
+
+</body>
+</html>
